@@ -10,6 +10,9 @@ public class mainTest {
 	public Boxservice boxService() throws MalformedURLException {
 	        HessianProxyFactory hessianProxyFactoryBean = new HessianProxyFactory();
 	        String url = "http://localhost:8080/box.service";
+	        String aString = "aaa";
+	        String bString = "bbbb";
+	        System.out.println(aString+" "+bString);
 	        return (Boxservice) hessianProxyFactoryBean.create(Boxservice.class, url);
 	}
 	
