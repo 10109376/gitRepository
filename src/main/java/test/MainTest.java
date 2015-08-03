@@ -12,6 +12,7 @@ import busi.QueueConsumer;
 public class MainTest {
 	
 	public MainTest() throws IOException, TimeoutException {
+		//
 		QueueConsumer consumer = new QueueConsumer("queue");
 		Thread consumerthred = new Thread(consumer);
 		consumerthred.start();
